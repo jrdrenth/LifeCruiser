@@ -1,0 +1,42 @@
+body {
+    margin-top: 25px;
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+h1{
+    display: inline-block;
+    border: 1px solid black;
+    font-size: 33px;
+    margin-bottom: 25px;
+}
+h2 {
+    display: inline-block;
+    border: 1px solid black;
+    font-size: 33px; 
+    margin-bottom: 25px;
+}
+h3 {
+    display: inline-block;
+    border: 1px solid black;
+    font-size: 33px;
+    margin-bottom: 25px;
+}
+h4 {
+    display: inline-block;
+    border: 3px solid black;
+    font-size: 99px;
+}
+.teamInfo {
+    margin-top: 10px;
+    font-size: 10px;
+
+}
+.pageInfo {
+    margin-top: 10px;
+    font-size: 10px;
+
+}

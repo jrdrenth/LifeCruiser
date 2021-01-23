@@ -53,21 +53,25 @@
 
   <div class="row">
     <div class="col-lg"></div>
-    <h4><b>Welcome to lifeCruiser!</b></h4>
+    <h4><b>History</b></h4>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <teamInfo>Search for a city:</teamInfo>
-        <input class="form-control" type="text" id="search-value" />
-        <button class="btn btn-primary" id="search-button"> <i class="fa fa-search"></i> </button>
+      <div class="col-lg">
+        <newSubmissions><b>New Submissions:</b></newSubmissions>
+        <form action="/action_page.php">
+          <label for="fname">Location:</label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="lname">Details:</label><br>
+          <input type="text" id="lname" name="lname"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div class="col-lg">
+        <pageInfo><b>History Log</b></pageInfo>
       </div>
     </div>
   </div>
-
-
-
-
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
@@ -75,7 +79,5 @@
 
 
 </body>
-
 <link rel="stylesheet" href="style.css">
-
 </html>
