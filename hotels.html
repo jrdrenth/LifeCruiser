@@ -40,10 +40,6 @@
             </li>
             <li><a class="dropdown-item" href="attractions.html">Things To Do!</a></li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
       </ul>
     </div>
   </div>
@@ -57,17 +53,16 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-lg">
-        <teamInfo>Team Information</teamInfo>
+      <div class="col-lg-3">
+        <teamInfo><b>Search for a city:</b></teamInfo>
+        <input class="form-control" type="text" id="search-value" />
+        <button class="btn btn-primary" id="search-button"> <i class="fa fa-search"></i> </button>
       </div>
-      <div class="col-lg">
-        <pageInfo>Page Information</pageInfo>
-        <div id="page-info">
-        </div>
+      <div class="col-lg-9">
+        <pageInfo><b>Hotel Listings</b></pageInfo>
       </div>
     </div>
   </div>
-
 
 
 
@@ -83,5 +78,6 @@
 </body>
 
 <link rel="stylesheet" href="style.css">
+<link rel="script" href="hotels.js">
 
 </html>
