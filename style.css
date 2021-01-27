@@ -1,5 +1,5 @@
-head {
-    background-color: transparent;
+.citySearch {
+    font: black;
 }
 body {
     margin-top: 25px;
@@ -8,30 +8,37 @@ body {
     padding-right: 300px;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: antiquewhite;
+    background-color: black;
+    background-image: url(travellingimage.jpg);
+    background-repeat: no-repeat;
+    background-size: 1750px;
+    background-position: center top;
+    font-size: large;
+    font-weight: bold;
+    color: tan;
 
 }
 h1{
     display: inline-block;
-    border: 1px solid black;
+    border: 1px solid dimgrey;
     font-size: 33px;
     margin-bottom: 25px;
 }
 h2 {
     display: inline-block;
-    border: 1px solid black;
+    border: 1px solid dimgrey;
     font-size: 33px; 
     margin-bottom: 25px;
 }
 h3 {
     display: inline-block;
-    border: 1px solid black;
+    border: 1px solid dimgrey;
     font-size: 33px;
     margin-bottom: 25px;
 }
 h4 {
     display: inline-block;
-    border: 3px solid black;
+    border: 3px solid dimgrey;
     font-size: 99px;
 }
 .teamInfo {
@@ -51,3 +58,4 @@ h4 {
   background-color: black;
   color: white;
 }
+
