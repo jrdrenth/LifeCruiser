@@ -35,10 +35,6 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="hotels.html">Hotels</a></li>
             <li><a class="dropdown-item" href="flights.html">Flights</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="attractions.html">Things To Do!</a></li>
           </ul>
       </ul>
     </div>
@@ -46,94 +42,47 @@
 </nav>
 
 <body>
-  <div class="container">
-    <div id="trip-1" class="row time-block">
-      <div class="col-md-1 hour">
-        I
-      </div>
-      <textarea class="col-md-10 description">
-      </textarea>
-      <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-    </div>
-    <div id="trip-2" class="row time-block">
-      <div class="col-md-1 hour">
-        II
-      </div>
-      <textarea class="col-md-10 description">
-      </textarea>
-      <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-    </div>
-    <div id="trip-3" class="row time-block">
-      <div class="col-md-1 hour">
-        III
-      </div>
-      <textarea class="col-md-10 description">
-      </textarea>
-      <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-    </div>
-    <div id="trip-4" class="row time-block">
-      <div class="col-md-1 hour">
-        IV
-      </div>
-      <textarea class="col-md-10 description">
-      </textarea>
-      <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-    </div>
-    <div id="trip-5" class="row time-block">
-      <div class="col-md-1 hour">
-        V
-      </div>
-      <textarea class="col-md-10 description">
-      </textarea>
-      <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-    </div>
-    <div id="trip-6" class="row time-block">
-      <div class="col-md-1 hour">
-        VI
-      </div>
-      <textarea class="col-md-10 description">
-      </textarea>
-      <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-    </div>
-    <div id="trip-7" class="row time-block">
-      <div class="col-md-1 hour">
-        VII
-      </div>
-      <textarea class="col-md-10 description">
-      </textarea>
-      <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-    </div>
-   <div id="trip-8" class="row time-block">
-      <div class="col-md-1 hour">
-        VIII
-      </div>
-      <textarea class="col-md-10 description">
-      </textarea>
-      <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-    </div>
-    <div id="trip-9" class="row time-block">
-      <div class="col-md-1 hour">
-        IX
-      </div>
-      <textarea class="col-md-10 description">
-      </textarea>
-      <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-    </div>
-    <div id="trip-10" class="row time-block">
-     <div class="col-md-1 hour">
-        X
-      </div>
-      <textarea class="col-md-10 description">
-      </textarea>
-      <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-    </div>
+  <div class="row">
+    <div class="col-lg"></div>
+    <h4><b>History</b></h4>
   </div>
-  <!-- Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
+  <!DOCTYPE html>
+  <html lang="en">
+  <!-- History input for places traveled-->
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3">
+          <form id="where-did-you-travel">
+            <label>Where did you travel?</label>
+            <input type="text" name="trip-item" id="trip-item">
+            <button type="submit">Submit</button>
+            <ol id="tripItem"></ol>
+          </form>
+
+        </div>
+        <div class="col-lg-9">
+          <form id="what-did-you-do-there">
+            <label>What did you do there?</label>
+            <div>
+            </div>
+            <input type="text" name="trip-description" id="trip-description">
+            <button type="submit">Submit</button>
+            <ol id="descriptionItem"></ol>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"></script>
 
 
-</body>
-<link rel="stylesheet" href="style.css">
-</html>
+  </body>
+  <link rel="stylesheet" href="style.css">
+  <script src="history.js"></script>
+
+  </html>
