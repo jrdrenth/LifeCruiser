@@ -1,17 +1,14 @@
-.citySearch {
-    font: black;
-}
 body {
-    margin-top: 25px;
-    text-align: center;
+    margin-top: 50px;
+    text-align: relative;
     padding-left: 300px;
     padding-right: 300px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 66px;
+    padding-bottom: 100px;
     background-color: black;
     background-image: url(travellingimage.jpg);
     background-repeat: no-repeat;
-    background-size: 1750px;
+    background-size: 2000px;
     background-position: center top;
     font-size: large;
     font-weight: bold;
@@ -20,26 +17,11 @@ body {
 }
 h1{
     display: inline-block;
-    border: 1px solid dimgrey;
-    font-size: 33px;
-    margin-bottom: 25px;
-}
-h2 {
-    display: inline-block;
-    border: 1px solid dimgrey;
-    font-size: 33px; 
-    margin-bottom: 25px;
-}
-h3 {
-    display: inline-block;
-    border: 1px solid dimgrey;
-    font-size: 33px;
-    margin-bottom: 25px;
-}
-h4 {
-    display: inline-block;
-    border: 3px solid dimgrey;
+    /* border: 1px solid dimgrey; */
+    text-align: center;
     font-size: 99px;
+    margin-bottom: 25px;
+    border-bottom: 5px solid tan;
 }
 .teamInfo {
     margin-top: 10px;
@@ -58,4 +40,21 @@ h4 {
   background-color: black;
   color: white;
 }
-
+.col-lg-3 {
+    display: inline-block;
+    border: 3px solid brown;
+    text-align: left;
+    margin-bottom: 25px;
+}
+.col-lg-6 {
+    display: inline-block;
+    border: 3px solid lightseagreen;
+    text-align: left;
+    margin-bottom: 25px;
+}
+.col-lg-12 {
+    display: inline-block;
+    border: 3px solid tan;
+    text-align: center;
+    margin-bottom: 25px;
+}
