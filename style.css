@@ -8,14 +8,14 @@ body {
     background-color: black;
     background-image: url(travellingimage.jpg);
     background-repeat: no-repeat;
-    background-size: 2000px;
+    background-size: 1750px;
     background-position: center top;
     font-size: large;
     font-weight: bold;
     color: tan;
 
 }
-h1{
+h1 {
     display: inline-block;
     /* border: 1px solid dimgrey; */
     text-align: center;
@@ -23,6 +23,16 @@ h1{
     margin-bottom: 25px;
     border-bottom: 5px solid tan;
 }
+h4 {
+    display: inline-block;
+    text-align: center;
+    font-size: 33px;
+    margin-bottom: 25px;
+    margin-left: 225px;
+    border-bottom: 5px solid tan;
+}
+
+
 .teamInfo {
     margin-top: 10px;
     font-size: 10px;
@@ -46,7 +56,19 @@ h1{
     text-align: left;
     margin-bottom: 25px;
 }
+.col-lg-4 {
+    display: inline-block;
+    border: 3px solid brown;
+    text-align: left;
+    margin-bottom: 25px;
+}
 .col-lg-6 {
+    display: inline-block;
+    border: 3px solid lightseagreen;
+    text-align: left;
+    margin-bottom: 25px;
+}
+.col-lg-8 {
     display: inline-block;
     border: 3px solid lightseagreen;
     text-align: left;
