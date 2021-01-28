@@ -3,13 +3,13 @@ $(document).ready(function() {
 
   // Functions
   function loadSearchHistory() {
-    prevSearches = JSON.parse(localStorage.getItem('prevHotels'));
+    prevSearches = JSON.parse(localStorage.getItem('prevRestaurants'));
     
     if (prevSearches == null) {
       prevSearches = [];
     } else if (prevSearches.length > 0) {
       repaintSearchHistory();
-      getHotels(prevSearches[0]);
+      getRestaurants(prevSearches[0]);
     }
   }
   
@@ -35,7 +35,7 @@ $(document).ready(function() {
     }
 
     prevSearches.unshift(text.trim());
-    localStorage.setItem('prevHotels', JSON.stringify(prevSearches));
+    localStorage.setItem('prevRestaurants', JSON.stringify(prevSearches));
   }
 
   function repaintSearchHistory() {
@@ -52,51 +52,71 @@ $(document).ready(function() {
     }
   }
   
-  function getHotels(cityName, isNewSearch = false) {
-    var apiKey = '76b9415c4fmshc171dbb08bd999ep1338b7jsn01fe30d91026';
-    var queryURL = 'https://hotels4.p.rapidapi.com/locations/search?query=' + cityName + '&locale=en_US';
+  function getCityId(cityName) {
+    var cityId = -1;
 
-    //console.log('isNewSearch:' + isNewSearch);
-    //console.log('city: ' + cityName);
+    var apiKey = 'a01146ee9b5f4562d5c2452b43b5e308';
+    var queryURL = 'https://developers.zomato.com/api/v2.1/cities?q=' + cityName;
+
+    $.ajax({
+      url: queryURL,
+      method: "GET",
+      async: false,
+      headers: {
+        'Accept': 'application/json',
+        'user-key': apiKey
+      }
+    }).done(function(response) {
+
+      if (response != null
+          && response.location_suggestions != null
+          && response.location_suggestions.length > 0) {
+        
+        // Just take the first location for now, there is no way to know exactly which one
+        // the user is looking for right now without presenting them with all choices to choose from
+        cityId = response.location_suggestions[0].id;
+        
+      }
+
+    })
+    .fail(function(response) {
+      // Handle failed call here, do nothing for now
+    });
+
+    return cityId;
+  }
+
+  function getRestaurants(cityName, isNewSearch = false) {
+    var apiKey = 'a01146ee9b5f4562d5c2452b43b5e308';
+    var cityId = getCityId(cityName);
+    var queryURL = 'https://developers.zomato.com/api/v2.1/search?entity_id=' + cityId + '&entity_type=city';
 
     $.ajax({
       url: queryURL,
       method: "GET",
       headers: {
-        'x-rapidapi-key': apiKey,
-        'x-rapidapi-host': 'hotels4.p.rapidapi.com'
+        'Accept': 'application/json',
+        'user-key': apiKey
       }
     }).done(function(response) {
-      console.log(response);
-
+      
       if (isNewSearch) {
         addCity(cityName);
         repaintSearchHistory();
       }
 
       // Clear the current weather
-      var currentHotels = $("#current-hotels");
-      currentHotels.empty();
+      var currentRestaurants = $('#current-restaurants');
+      currentRestaurants.empty();
 
-      if (response.suggestions !== undefined && response.suggestions.length > 0) {
-        var hotelGroup;
+      if (response.restaurants !== undefined) {
 
-        // Get group: "HOTEL GROUP"
-        for (let i = 0; i < response.suggestions.length; i++) {
-          var currentSuggestion = response.suggestions[i];
+        for (let i = 0; i < response.restaurants.length; i++) {
+          let currentRestaurant = response.restaurants[i].restaurant;
 
-          if (currentSuggestion.group === 'HOTEL_GROUP') {
-            hotelGroup = currentSuggestion.entities;
-            break;
-          }
-        }
-
-        for (let i = 0; i < hotelGroup.length; i++) {
-          let currentHotel = hotelGroup[i];
-
-          var element = $('<p>').text(currentHotel.name);
-          //element.text = currentHotel.name;
-          currentHotels.append(element);
+          var element = $('<p>').text(currentRestaurant.name);
+          //element.text = currentRestaurant.name;
+          currentRestaurants.append(element);
         }
       }
 
@@ -117,21 +137,21 @@ $(document).ready(function() {
 
   // Event Listener for clicking the Search Button
   $('#search-button').click(function() {
-    getHotels(getCityName(), true);
+    getRestaurants(getCityName(), true);
   });
 
   // Event Listener for pressing Enter in the Search text box
   $('#search-input').keypress(function(event) {
     var keycode = (event.keyCode ? event.keyCode : event.which);
     if(keycode == '13') {
-      getHotels(getCityName(), true);
+      getRestaurants(getCityName(), true);
     }
   });
 
   // Event Listener for clicking an item in the search history
   $("#search-history").on("click", "li", function() {
     var cityName = $(this).text();
-    getHotels(cityName);
+    getRestaurants(cityName);
   });
 
 
