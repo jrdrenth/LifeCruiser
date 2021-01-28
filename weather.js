@@ -14,7 +14,7 @@ $(document).ready(function () {
   function searchWeather(findCity) {
     $.ajax({
       type: "GET",
-      url: "http://api.openweathermap.org/data/2.5/weather?q=" + findCity + "&appid=3c8c1d9e76eadd902a53aa3ec8156094&units=imperial",
+      url: "https://api.openweathermap.org/data/2.5/weather?q=" + findCity + "&appid=3c8c1d9e76eadd902a53aa3ec8156094&units=imperial",
       dataType: "json",
       success: function (data) {
         if (history.indexOf(findCity) === -1) {
@@ -29,7 +29,7 @@ $(document).ready(function () {
         let humid = $("<p>").addClass("weatherBoard-text").text("Humidity: " + data.main.humidity + "%");
         let temp = $("<p>").addClass("weatherBoard-text").text("Temperature: " + data.main.temp + " °F");
         let cardBody = $("<div>").addClass("weatherBoard-body");
-        let img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
+        let img = $("<img>").attr("src", "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
         title.append(img);
         cardBody.append(title, temp, humid, wind);
         weatherBoard.append(cardBody);
@@ -42,7 +42,7 @@ $(document).ready(function () {
   function getUVIndex(lat, lon) {
     $.ajax({
       type: "GET",
-      url: "http://api.openweathermap.org/data/2.5/uvi?appid=3c8c1d9e76eadd902a53aa3ec8156094&lat=" + lat + "&lon=" + lon,
+      url: "https://api.openweathermap.org/data/2.5/uvi?appid=3c8c1d9e76eadd902a53aa3ec8156094&lat=" + lat + "&lon=" + lon,
       dataType: "json",
       success: function (data) {
         let uv = $("<p>").text("UV Index: ");
@@ -71,7 +71,7 @@ $(document).ready(function () {
   function getForecast(findCity) {
     $.ajax({
       type: "GET",
-      url: "http://api.openweathermap.org/data/2.5/forecast?q=" + findCity + "&appid=3c8c1d9e76eadd902a53aa3ec8156094&units=imperial",
+      url: "https://api.openweathermap.org/data/2.5/forecast?q=" + findCity + "&appid=3c8c1d9e76eadd902a53aa3ec8156094&units=imperial",
       dataType: "json",
       success: function (data) {
         $("#forecast").html("<h4 class=\"mt-3\">5-Day Forecast:</h4>").append("<div class=\"row\">");
@@ -81,7 +81,7 @@ $(document).ready(function () {
             let weatherBoard = $("<div>").addClass("weatherBoard text-tan");
             let body = $("<div>").addClass("weatherBoard-body p-3");
             let title = $("<weatherSearch>").addClass("weatherBoard-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
-            let img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png");
+            let img = $("<img>").attr("src", "https://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png");
             let p1 = $("<p>").addClass("weatherBoard-text").text("Temp: " + data.list[i].main.temp_max + " °F");
             let p2 = $("<p>").addClass("weatherBoard-text").text("Humidity: " + data.list[i].main.humidity + "%");
             col.append(weatherBoard.append(body.append(title, img, p1, p2)));
