@@ -10,6 +10,7 @@ I love to travel and I know many others do as well. However, at times while plan
   - [🔮Future Development](#future-development)
   - [🔨 Tools](#Tools)
   - [👩👨 Contributors](#contributors)
+  - [📜 License](#license)
 
 
 
@@ -45,8 +46,12 @@ Lifecruiser is a Travelers personal planner. It allows the traveler to search, p
 
 * [John Drenth](https://github.com/jrdrenth)
 
-* [Dane Laban](https://github.com)
+* [Dane Laban](https://github.com/DaneLaban)
 
-* [Andy Nguyen](https://github.com)
+* [Andy Nguyen](https://github.com/)
 
 * [An Trinh](https://github.com)
+
+ ## 📜 License
+ 
+ * MIT
