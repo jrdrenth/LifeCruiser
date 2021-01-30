@@ -35,8 +35,7 @@ Lifecruiser is a Travelers personal planner. It allows the traveler to search, p
 * [Bootstrap](https://getbootstrap.com)
 * [Zomato API](https://developers.zomato.com)
 * [Rapid API](https://rapidapi.com)
-* [Weather API](https://api.getweather.com)
-
+* [Weather API](https://openweathermap.com/api)
 
 
   
