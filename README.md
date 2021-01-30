@@ -35,6 +35,7 @@ Lifecruiser is a Travelers personal planner. It allows the traveler to search, p
 * [Bootstrap](https://getbootstrap.com)
 * [Zomato API](https://developers.zomato.com)
 * [Rapid API](https://rapidapi.com)
+* [Weather API](https://api.getweather.com)
 
 
 
@@ -48,9 +49,9 @@ Lifecruiser is a Travelers personal planner. It allows the traveler to search, p
 
 * [Dane Laban](https://github.com/DaneLaban)
 
-* [Andy Nguyen](https://github.com/)
+* [Andy Nguyen](https://github.com/Ydna317)
 
-* [An Trinh](https://github.com)
+* [An Trinh](https://github.com/Eibonmon)
 
  ## 📜 License
  
