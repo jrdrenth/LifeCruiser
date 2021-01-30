@@ -42,3 +42,4 @@ var savedDestination = localStorage.getItem('descriptionItems');
 if (savedDestination) {
     description.innerHTML = savedDestination;
 }
+ 
