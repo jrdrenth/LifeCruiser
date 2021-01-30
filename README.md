@@ -10,9 +10,14 @@ I love to travel and I know many others do as well. However, at times while plan
   - [📝 Description](#-description)
   - [📷  Images](#--images)
   - [🔮Future Development](#future-development)
+<<<<<<< HEAD
+  - [Contributors](#-contributors)
+
+=======
   - [🔨 Tools](#Tools)
   - [👩👨 Contributors](#contributors)
   - [📜 License](#license)
+>>>>>>> 149a23ff4dd4fd735ec06d1873786fda0aa5ea45
 
 ## 📝 Description
 Lifecruiser is a Travelers personal planner. It allows the traveler to search, plan and record its destinations in an organized fashion. If you are a scrupulous planner and would like to track all your intineraries, lifecruiser is a life saver.
@@ -29,6 +34,28 @@ Lifecruiser is a Travelers personal planner. It allows the traveler to search, p
 ![lifecruiser5](https://user-images.githubusercontent.com/74637520/106366125-9ff05b80-62ee-11eb-9c09-d5014100203d.png)
 
 ## 🔮Future Development
+<<<<<<< HEAD
+* **Clear button** That will clear the storage when you click the button. The cities will still be visible until you refresh the page. 
+* **Events**  search events page that will search for events in a particular, city , country or state.
+  
+
+
+
+
+
+
+## 👩👨 Contributors
+
+[Sucely Vargas](https://github.com/Lolasmom)
+
+[John Drenth](https://github.com/jrdrenth)
+
+[Dane Laban](https://github.com)
+
+[Andy Nguyen](https://github.com)
+
+[An Trinh](https://github.com)
+=======
 * **Clear Button** -Button That will clear the storage when you click the button. 
 * **Events** - search events page that will search for events in a particular, city , country or state.
 * **Reviews** -Sub-comments, share report
@@ -60,3 +87,4 @@ Lifecruiser is a Travelers personal planner. It allows the traveler to search, p
  ## 📜 License
  
  * MIT
+>>>>>>> 149a23ff4dd4fd735ec06d1873786fda0aa5ea45
