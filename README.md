@@ -23,10 +23,10 @@ Lifecruiser is a Travelers personal planner. It allows the traveler to search, p
 
 
 ## 🔮Future Development
-* **Clear Button** Button That will clear the storage when you click the button. 
-* **Events**  search events page that will search for events in a particular, city , country or state.
-* **Reviews** Sub-comments, share report
-* **Social Media**, to make things more social , Google, facebook, Instagram.
+* **Clear Button** -Button That will clear the storage when you click the button. 
+* **Events** - search events page that will search for events in a particular, city , country or state.
+* **Reviews** -Sub-comments, share report
+* **Social Media**,- to make things more social , Google, facebook, Instagram.
 
 
 
