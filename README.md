@@ -8,7 +8,7 @@ I love to travel and I know many others do as well. However, at times while plan
   - [📝 Description](#-description)
   - [📷  Images](#--images)
   - [🔮Future Development](#future-development)
-
+  - [Contributors](#-contributors)
 
 
 ## 📝 Description
@@ -21,5 +21,23 @@ Lifecruiser is a Travelers personal planner. It allows the traveler to search, p
 
 
 ## 🔮Future Development
+* **Clear button** That will clear the storage when you click the button. The cities will still be visible until you refresh the page. 
+* **Events**  search events page that will search for events in a particular, city , country or state.
+  
 
-** Clear button**, That will clear the storage when you click the button. The cities will still be visible until you refresh the page. 
+
+
+
+
+
+## 👩👨 Contributors
+
+[Sucely Vargas](https://github.com/Lolasmom)
+
+[John Drenth](https://github.com/jrdrenth)
+
+[Dane Laban](https://github.com)
+
+[Andy Nguyen](https://github.com)
+
+[An Trinh](https://github.com)
