@@ -42,4 +42,26 @@ var savedDestination = localStorage.getItem('descriptionItems');
 if (savedDestination) {
     description.innerHTML = savedDestination;
 }
+// Get form, item, and trip
+var tripDate = document.querySelector('#when-did-you-go');
+var dateItem = document.querySelector('#trip-date');
+var date = document.querySelector('#dateItem');
+tripDate.addEventListener('submit', function (event) {
+    // Don't submit the form
+    event.preventDefault();
+    // Ignore it if the trip item is empty
+    if (dateItem.value.length < 1) return;
+    // Add item to trip
+    date.innerHTML += '<li>' + dateItem.value + '</li>';
+    // Clear input
+    dateItem.value = '';
+    // Save the list to localStorage
+    localStorage.setItem('dateItems', date.innerHTML);
+}, false);
+// Check for saved trip items
+var savedDate = localStorage.getItem('dateItems');
+// If there are any saved items, update our list
+if (savedDate) {
+    date.innerHTML = savedDate;
+}
  
