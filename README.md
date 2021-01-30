@@ -10,21 +10,17 @@ I love to travel and I know many others do as well. However, at times while plan
   - [📝 Description](#-description)
   - [📷  Images](#--images)
   - [🔮Future Development](#future-development)
-<<<<<<< HEAD
   - [Contributors](#-contributors)
-
-=======
   - [🔨 Tools](#Tools)
   - [👩👨 Contributors](#contributors)
   - [📜 License](#license)
->>>>>>> 149a23ff4dd4fd735ec06d1873786fda0aa5ea45
+
 
 ## 📝 Description
 Lifecruiser is a Travelers personal planner. It allows the traveler to search, plan and record its destinations in an organized fashion. If you are a scrupulous planner and would like to track all your intineraries, lifecruiser is a life saver.
 
 
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
-* Directions for Future Development
+
 
 ## 📷  Images
 ![lifecruiser1](https://user-images.githubusercontent.com/74637520/106366121-9e269800-62ee-11eb-9aac-a79ec0b6a567.png)
